@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Lool Beh Mérida - Hospedaje en Yucatán</title>
-    <meta name="description" content="Hospedaje tranquilo y cómodo en Mérida, Yucatán. Un espacio ideal para descansar y disfrutar la ciudad con calma.">
+    <title>Casa Lool Beh Mérida - Hospedaje Colonial en el Centro Histórico</title>
+    <meta name="description" content="Casa colonial en el centro de Mérida. Piscina de chukum maya, patios con árboles frutales. Puntuación 9.7 - A 12 minutos de la catedral.">
     <style>
         * {
             margin: 0;
@@ -76,8 +76,22 @@
         .hero p {
             font-size: 1.3rem;
             max-width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 1rem;
             opacity: 0.95;
+        }
+
+        .rating {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .rating strong {
+            font-size: 1.5rem;
+            color: #ffd700;
         }
 
         /* Container */
@@ -102,11 +116,27 @@
             font-size: 1.1rem;
             margin-bottom: 1rem;
             color: #555;
+            line-height: 1.8;
         }
 
         /* Alternate backgrounds */
         section:nth-child(even) {
             background: #f8f9fa;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
         }
 
         /* Features Grid */
@@ -136,16 +166,21 @@
         }
 
         .feature-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 0.5rem;
             color: #667eea;
         }
 
+        .feature-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
         /* Services List */
-        .services-list {
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
             margin-top: 2rem;
         }
 
@@ -161,6 +196,27 @@
 
         .service-item .emoji {
             font-size: 2rem;
+        }
+
+        /* Highlights */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .highlight-item h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
         }
 
         /* CTA Button */
@@ -231,7 +287,11 @@
     <section class="hero" id="inicio">
         <div class="container">
             <h2>Casa Lool Beh Mérida</h2>
-            <p>Hospedaje tranquilo y cómodo en la ciudad de Mérida, Yucatán. Un espacio ideal para descansar, sentirte en casa y disfrutar la ciudad con calma.</p>
+            <p>Casa colonial en el centro histórico de Mérida. Piscina de chukum maya, patios con árboles frutales y un encanto único que te hará sentir como en casa.</p>
+            <div class="rating">
+                ⭐ <strong>9.7</strong> Puntuación excepcional · 351 comentarios
+            </div>
+            <br>
             <a href="#reservaciones" class="cta-button">Hacer Reservación</a>
         </div>
     </section>
@@ -240,8 +300,33 @@
     <section id="sobre">
         <div class="container">
             <h2>📖 Sobre Casa Lool Beh</h2>
-            <p>Casa Lool Beh Mérida es un alojamiento acogedor ubicado en Mérida, Yucatán. Ofrecemos habitaciones limpias, cómodas y bien equipadas, pensadas para que tu estancia sea agradable desde el primer día.</p>
-            <p>Es un lugar tranquilo, ideal tanto para estancias cortas como largas, ya sea por trabajo o por descanso.</p>
+            <p>Serás recibido y acogido por una pareja joven México-española (Ananda y José) y sus dos adorables perros que te harán sentir como en casa. Nuestro deseo es que te sientas seguro y feliz, esperando que encuentres lo que tu corazón necesita.</p>
+            
+            <div class="info-box">
+                <h3>🏛️ Una Casa con Historia y Encanto</h3>
+                <p>Casa Lool Beh es una casa colonial construida en los años 40, decorada con un estilo mexicano conservando algo de mobiliario original y sus puertas con arcos de medio punto, lo que le da mucho encanto al lugar.</p>
+                
+                <p>Cada espacio tiene su personalidad. Los invitados pueden disfrutar de la gran sala de estar, el amplio comedor y dos grandes patios rodeados de árboles frutales, plantas silvestres y una linda piscina para refrescarse, hecha de <strong>chukum</strong> (resina típica de Yucatán, utilizada por los mayas).</p>
+                
+                <p>La casa está ubicada en el centro de Mérida, a <strong>12 minutos (950 m) de la catedral</strong> y cercana a los parques más emblemáticos de la ciudad. El más cercano es <strong>Santiago</strong>, que se encuentra a 7 minutos, donde podrás degustar comida típica y algunas noches, eventos musicales.</p>
+                
+                <p>Nuestras habitaciones son muy cómodas, cuidando los detalles más importantes: <strong>colchones, sábanas y almohadas de la mejor calidad</strong>, garantizando un gran descanso.</p>
+            </div>
+
+            <div class="highlights">
+                <div class="highlight-item">
+                    <h3>🏊 Piscina de Chukum Maya</h3>
+                    <p>Disfruta de nuestra piscina única, hecha con la tradicional resina de chukum utilizada por los mayas. Un oasis en medio del centro histórico.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>🌳 Patios con Árboles Frutales</h3>
+                    <p>Dos grandes patios llenos de naturaleza, con árboles frutales y plantas silvestres que crean un ambiente fresco y relajante.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>🏛️ Arquitectura Colonial</h3>
+                    <p>Construcción de los años 40 con arcos de medio punto y mobiliario original que conserva el encanto de la época.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -249,63 +334,129 @@
     <section id="habitaciones">
         <div class="container">
             <h2>🛏 Habitaciones</h2>
-            <p>Nuestras habitaciones cuentan con todo lo necesario para una estancia cómoda:</p>
+            <p>Nuestras habitaciones están diseñadas para garantizar tu descanso y comodidad:</p>
             <div class="features">
                 <div class="feature-card">
                     <div class="icon">🛏️</div>
-                    <h3>Cama Confortable</h3>
-                    <p>Para que descanses como en casa</p>
+                    <h3>Colchones de Calidad</h3>
+                    <p>Los mejores colchones para un descanso perfecto</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✨</div>
+                    <h3>Sábanas Premium</h3>
+                    <p>Ropa de cama de la mejor calidad</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">❄️</div>
                     <h3>Aire Acondicionado</h3>
-                    <p>Clima perfecto todo el año</p>
+                    <p>Clima perfecto durante tu estancia</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🚿</div>
                     <h3>Baño Privado</h3>
-                    <p>Tu espacio personal</p>
+                    <p>Con tina y todos los amenidades</p>
                 </div>
                 <div class="feature-card">
-                    <div class="icon">✨</div>
-                    <h3>Espacio Limpio</h3>
-                    <p>Bien cuidado y ordenado</p>
+                    <div class="icon">🧳</div>
+                    <h3>Armario Espacioso</h3>
+                    <p>Espacio suficiente para tu equipaje</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🌙</div>
+                    <h3>Ambiente Tranquilo</h3>
+                    <p>Horario de descanso respetado (22:00-07:00)</p>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 2rem;">Buscamos que te sientas cómodo y relajado durante toda tu visita.</p>
+            <p style="text-align: center; margin-top: 2rem; font-size: 1.2rem; color: #667eea;">
+                <strong>Solo para adultos</strong> · Edades entre 20 y 60 años
+            </p>
         </div>
     </section>
 
     <!-- Servicios Section -->
     <section id="servicios">
         <div class="container">
-            <h2>🧺 Servicios</h2>
-            <p>En Casa Lool Beh Mérida ofrecemos:</p>
-            <div class="services-list">
+            <h2>🧺 Servicios e Instalaciones</h2>
+            <p><strong>Puntuación de instalaciones: 9.3</strong> - ¡Excelentes instalaciones!</p>
+            
+            <h3 style="margin-top: 2rem; color: #667eea;">Servicios Principales</h3>
+            <div class="services-grid">
+                <div class="service-item">
+                    <span class="emoji">🏊</span>
+                    <span><strong>Piscina al aire libre</strong> (Chukum maya)</span>
+                </div>
                 <div class="service-item">
                     <span class="emoji">📶</span>
-                    <span>Wi-Fi gratuito</span>
+                    <span><strong>WiFi gratis</strong> - 50 Mbps (ideal para streaming HD)</span>
                 </div>
                 <div class="service-item">
-                    <span class="emoji">❄️</span>
-                    <span>Aire acondicionado</span>
+                    <span class="emoji">🚗</span>
+                    <span><strong>Estacionamiento gratis</strong> en las inmediaciones</span>
                 </div>
                 <div class="service-item">
-                    <span class="emoji">🚿</span>
-                    <span>Baño privado</span>
+                    <span class="emoji">✈️</span>
+                    <span><strong>Traslados aeropuerto</strong> (costo adicional)</span>
                 </div>
                 <div class="service-item">
                     <span class="emoji">🧹</span>
-                    <span>Limpieza</span>
+                    <span><strong>Limpieza regular</strong></span>
                 </div>
                 <div class="service-item">
-                    <span class="emoji">🤫</span>
-                    <span>Ambiente tranquilo</span>
+                    <span class="emoji">❄️</span>
+                    <span><strong>Aire acondicionado</strong></span>
                 </div>
                 <div class="service-item">
-                    <span class="emoji">📍</span>
-                    <span>Buena ubicación</span>
+                    <span class="emoji">🧳</span>
+                    <span><strong>Guardaequipaje</strong></span>
                 </div>
+                <div class="service-item">
+                    <span class="emoji">ℹ️</span>
+                    <span><strong>Información turística</strong></span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🍳</span>
+                    <span><strong>Cocina compartida</strong></span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🌳</span>
+                    <span><strong>Jardín con árboles frutales</strong></span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🛋️</span>
+                    <span><strong>Sala de estar amplia</strong></span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🎲</span>
+                    <span><strong>Sala de juegos</strong></span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: #667eea;">Servicios Adicionales</h3>
+            <div class="services-grid">
+                <div class="service-item">
+                    <span class="emoji">💆</span>
+                    <span>Masajes (costo adicional)</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">💅</span>
+                    <span>Tratamientos faciales y de belleza</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🚙</span>
+                    <span>Renta de autos</span>
+                </div>
+            </div>
+
+            <div style="background: #fff3cd; padding: 1.5rem; border-radius: 10px; margin-top: 2rem;">
+                <p style="margin: 0; color: #856404;"><strong>⚠️ Importante:</strong></p>
+                <ul style="margin-left: 1.5rem; margin-top: 0.5rem; color: #856404;">
+                    <li>No se admiten mascotas</li>
+                    <li>No se aceptan niños</li>
+                    <li>No se puede fumar</li>
+                    <li>No se permiten fiestas ni eventos</li>
+                    <li>Horario de descanso: 22:00 - 07:00</li>
+                    <li>Solo se aceptan pagos en efectivo</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -314,10 +465,66 @@
     <section id="ubicacion">
         <div class="container">
             <h2>📍 Ubicación</h2>
-            <p>Nos encontramos en la ciudad de Mérida, Yucatán, con fácil acceso a puntos de interés, restaurantes y zonas importantes de la ciudad.</p>
+            <p><strong>¡A los huéspedes les encantó caminar por el barrio!</strong> - Excelente ubicación en el centro histórico.</p>
+            
+            <div class="info-box">
+                <h3>🏛️ Centro Histórico de Mérida</h3>
+                <p>Estamos a 5 minutos del <strong>Parque Santiago</strong>, uno de los 5 parques más emblemáticos del centro de Mérida, donde podrás disfrutar de comida típica y eventos musicales que se organizan muy a menudo, además de varios restaurantes, bares, cantinas típicas y cafeterías.</p>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: #667eea;">Atracciones Principales</h3>
+            <div class="services-grid">
+                <div class="service-item">
+                    <span class="emoji">⛪</span>
+                    <span><strong>Plaza Principal de Mérida</strong> - 1.1 km (12 min)</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🌳</span>
+                    <span><strong>Parque Santiago</strong> - 7 minutos caminando</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🏞️</span>
+                    <span><strong>Parque La Mejorada</strong> - 2.1 km</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🏛️</span>
+                    <span><strong>Museo Mundo Maya</strong> - 8 km</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: #667eea;">Restaurantes Cercanos</h3>
+            <div class="services-grid">
+                <div class="service-item">
+                    <span class="emoji">🍽️</span>
+                    <span>Cocina Económica El Tío Will - 250 m</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🌮</span>
+                    <span>Lonchería El Uinic - 300 m</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">☕</span>
+                    <span>María del Carmen Mérida - 400 m</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: #667eea;">Transporte</h3>
+            <div class="services-grid">
+                <div class="service-item">
+                    <span class="emoji">🚌</span>
+                    <span><strong>Estación de Autobuses</strong> - 850 m</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">✈️</span>
+                    <span><strong>Aeropuerto Manuel Crescencio Rejón</strong> - 3.7 km</span>
+                </div>
+            </div>
+
             <div style="text-align: center; margin-top: 2rem;">
                 <p style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block;">
-                    <strong style="font-size: 1.3rem; color: #667eea;">📌 Mérida, Yucatán, México</strong>
+                    <strong style="font-size: 1.3rem; color: #667eea;">📌 Centro Histórico, Mérida, Yucatán, México</strong>
+                    <br>
+                    <span style="color: #666; font-size: 0.95rem;">Se reutilizaron piedras de ruinas mayas para construir las catedrales coloniales del centro histórico</span>
                 </p>
             </div>
         </div>
@@ -327,16 +534,28 @@
     <section id="reservaciones">
         <div class="container" style="text-align: center;">
             <h2>📅 Reservaciones</h2>
-            <p>Las reservaciones se realizan a través de Booking, donde puedes consultar disponibilidad, precios y opiniones de otros huéspedes.</p>
-            <a href="https://www.booking.com" target="_blank" class="cta-button">Reservar en Booking</a>
+            <p>Las reservaciones se realizan a través de Booking.com, donde puedes consultar disponibilidad, precios actualizados y leer los comentarios de nuestros huéspedes.</p>
+            
+            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block; margin-top: 2rem;">
+                <p style="margin-bottom: 1rem;"><strong>Horarios de Check-in/Check-out</strong></p>
+                <p style="color: #666;">✅ Check-in: 15:00 - 22:00</p>
+                <p style="color: #666;">✅ Check-out: 11:30 - 12:00</p>
+            </div>
+            
+            <br>
+            <a href="https://www.booking.com" target="_blank" class="cta-button">Ver Disponibilidad en Booking.com</a>
+            
+            <p style="margin-top: 2rem; color: #666;">🗣️ <strong>Hablamos inglés y español</strong></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Casa Lool Beh Mérida. Hospedaje en Mérida, Yucatán.</p>
-            <p>Un lugar tranquilo para descansar y disfrutar la ciudad.</p>
+            <p>&copy; 2026 Casa Lool Beh Mérida</p>
+            <p>Casa colonial en el centro histórico de Mérida, Yucatán</p>
+            <p style="margin-top: 1rem;">Gestionado por Ananda y José</p>
+            <p style="margin-top: 0.5rem;">⭐ <strong>9.7</strong> Puntuación excepcional basada en 351 comentarios</p>
         </div>
     </footer>
 </body>
