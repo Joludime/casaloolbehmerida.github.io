@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Lool Beh Mérida - Hospedaje en Yucatán</title>
+    <meta name="description" content="Hospedaje tranquilo y cómodo en Mérida, Yucatán. Un espacio ideal para descansar y disfrutar la ciudad con calma.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            margin-top: 60px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #667eea;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        /* Alternate backgrounds */
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+
+        /* Services List */
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .service-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-item .emoji {
+            font-size: 2rem;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1>🏡 Casa Lool Beh Mérida</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre Nosotros</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#reservaciones">Reservaciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h2>Casa Lool Beh Mérida</h2>
+            <p>Hospedaje tranquilo y cómodo en la ciudad de Mérida, Yucatán. Un espacio ideal para descansar, sentirte en casa y disfrutar la ciudad con calma.</p>
+            <a href="#reservaciones" class="cta-button">Hacer Reservación</a>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre">
+        <div class="container">
+            <h2>📖 Sobre Casa Lool Beh</h2>
+            <p>Casa Lool Beh Mérida es un alojamiento acogedor ubicado en Mérida, Yucatán. Ofrecemos habitaciones limpias, cómodas y bien equipadas, pensadas para que tu estancia sea agradable desde el primer día.</p>
+            <p>Es un lugar tranquilo, ideal tanto para estancias cortas como largas, ya sea por trabajo o por descanso.</p>
+        </div>
+    </section>
+
+    <!-- Habitaciones Section -->
+    <section id="habitaciones">
+        <div class="container">
+            <h2>🛏 Habitaciones</h2>
+            <p>Nuestras habitaciones cuentan con todo lo necesario para una estancia cómoda:</p>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="icon">🛏️</div>
+                    <h3>Cama Confortable</h3>
+                    <p>Para que descanses como en casa</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">❄️</div>
+                    <h3>Aire Acondicionado</h3>
+                    <p>Clima perfecto todo el año</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🚿</div>
+                    <h3>Baño Privado</h3>
+                    <p>Tu espacio personal</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✨</div>
+                    <h3>Espacio Limpio</h3>
+                    <p>Bien cuidado y ordenado</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem;">Buscamos que te sientas cómodo y relajado durante toda tu visita.</p>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios">
+        <div class="container">
+            <h2>🧺 Servicios</h2>
+            <p>En Casa Lool Beh Mérida ofrecemos:</p>
+            <div class="services-list">
+                <div class="service-item">
+                    <span class="emoji">📶</span>
+                    <span>Wi-Fi gratuito</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">❄️</span>
+                    <span>Aire acondicionado</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🚿</span>
+                    <span>Baño privado</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🧹</span>
+                    <span>Limpieza</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">🤫</span>
+                    <span>Ambiente tranquilo</span>
+                </div>
+                <div class="service-item">
+                    <span class="emoji">📍</span>
+                    <span>Buena ubicación</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación Section -->
+    <section id="ubicacion">
+        <div class="container">
+            <h2>📍 Ubicación</h2>
+            <p>Nos encontramos en la ciudad de Mérida, Yucatán, con fácil acceso a puntos de interés, restaurantes y zonas importantes de la ciudad.</p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block;">
+                    <strong style="font-size: 1.3rem; color: #667eea;">📌 Mérida, Yucatán, México</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservaciones Section -->
+    <section id="reservaciones">
+        <div class="container" style="text-align: center;">
+            <h2>📅 Reservaciones</h2>
+            <p>Las reservaciones se realizan a través de Booking, donde puedes consultar disponibilidad, precios y opiniones de otros huéspedes.</p>
+            <a href="https://www.booking.com" target="_blank" class="cta-button">Reservar en Booking</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Casa Lool Beh Mérida. Hospedaje en Mérida, Yucatán.</p>
+            <p>Un lugar tranquilo para descansar y disfrutar la ciudad.</p>
+        </div>
+    </footer>
+</body>
+</html>
