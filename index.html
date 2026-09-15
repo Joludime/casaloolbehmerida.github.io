@@ -916,6 +916,29 @@
             50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
         }
 
+        /* ===== ROOM SLIDER ===== */
+        .room-slider { position: relative; overflow: hidden; height: 220px; }
+        .room-slider img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.4s; }
+        .slider-dots {
+            position: absolute;
+            bottom: 0.7rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 2;
+        }
+        .sdot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            border: none;
+        }
+        .sdot.active { background: var(--secondary); transform: scale(1.3); }
+
         /* ===== SCROLL REVEAL ===== */
         .reveal {
             opacity: 0;
@@ -963,7 +986,7 @@
             <a href="#inicio" class="nav-logo">
                 <div>
                     <h1>🏡 Casa Lool Beh</h1>
-                    <span>Mérida, Yucatán · Desde 1940</span>
+                    <span>Mérida, Yucatán</span>
                 </div>
             </a>
             <ul id="nav-links">
@@ -1150,45 +1173,104 @@
                 <p>Cada habitación está pensada para tu máximo confort — colchones premium, ropa de cama de calidad y ambiente fresco.</p>
             </div>
             <div class="rooms-grid">
+
+                <!-- LOTO -->
                 <div class="room-card reveal">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720956.jpg?k=f0e1bd0e3e4de8ff34da99317f46afb581d6dd6a4441010a22d16c7a53b04ec7&o=&hp=1" alt="Habitación Doble">
-                    <div class="room-card-body">
-                        <h3>Habitación Doble</h3>
-                        <p>Cómoda y acogedora, ideal para parejas. Con vista al patio y acceso a todas las áreas comunes.</p>
-                        <div class="room-features">
-                            <span class="room-feature">❄️ A/C</span>
-                            <span class="room-feature">🛏️ Cama Queen</span>
-                            <span class="room-feature">🚿 Baño privado</span>
-                            <span class="room-feature">📶 WiFi</span>
+                    <div class="room-slider" id="slider-loto">
+                        <img src="images/habitaciones/loto/loto-3.jpg" alt="Habitación Loto">
+                        <div class="slider-dots">
+                            <span class="sdot active" onclick="slideRoom('loto',0,'images/habitaciones/loto/loto-3.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('loto',1,'images/habitaciones/loto/loto-1.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('loto',2,'images/habitaciones/loto/loto-balcon.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('loto',3,'images/habitaciones/loto/loto-bano.jpg')"></span>
                         </div>
                     </div>
-                </div>
-                <div class="room-card reveal">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/231721046.jpg?k=3d0619953ad411bae6fbc40f6155308581cbdf5a5ee247f32a395296efd3b1dc&o=&hp=1" alt="Habitación con Tina">
                     <div class="room-card-body">
-                        <h3>Habitación con Tina</h3>
-                        <p>Espaciosa y luminosa, con baño equipado con tina. Una experiencia colonial auténtica.</p>
+                        <h3>🌸 Loto</h3>
+                        <p>Habitación colonial con arcos de medio punto, muebles vintage originales y <strong>balcón privado</strong> con vista a la calle. Baño con tina y azulejos talavera.</p>
                         <div class="room-features">
                             <span class="room-feature">❄️ A/C</span>
+                            <span class="room-feature">🌀 Ventilador</span>
                             <span class="room-feature">🛁 Tina</span>
-                            <span class="room-feature">🧳 Armario</span>
+                            <span class="room-feature">🏛️ Balcón</span>
+                            <span class="room-feature">🪑 Mecedora</span>
                             <span class="room-feature">📶 WiFi</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- DHALIA -->
                 <div class="room-card reveal">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/284583803.jpg?k=d6467a660be49efcdac2b964476a9288e3626c4d4c31e39e79decae63da97472&o=&hp=1" alt="Suite Colonial">
+                    <div class="room-slider" id="slider-dhalia">
+                        <img src="images/habitaciones/dhalia/dhalia-1.jpg" alt="Habitación Dhalia">
+                        <div class="slider-dots">
+                            <span class="sdot active" onclick="slideRoom('dhalia',0,'images/habitaciones/dhalia/dhalia-1.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('dhalia',1,'images/habitaciones/dhalia/dhalia-2.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('dhalia',2,'images/habitaciones/dhalia/dhalia-3.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('dhalia',3,'images/habitaciones/dhalia/dhalia-5.jpg')"></span>
+                        </div>
+                    </div>
                     <div class="room-card-body">
-                        <h3>Suite Colonial</h3>
-                        <p>La habitación más amplia, con acceso al jardín y decoración colonial original de los años 40.</p>
+                        <h3>🌺 Dhalia</h3>
+                        <p>Habitación con 2 camas individuales y paredes bicolor azul y rojo. Amplia, con ventanas a los jardines, ideal para dos viajeros.</p>
                         <div class="room-features">
                             <span class="room-feature">❄️ A/C</span>
+                            <span class="room-feature">🌀 Ventilador</span>
+                            <span class="room-feature">🛏️ 2 camas ind.</span>
                             <span class="room-feature">🌳 Vista jardín</span>
-                            <span class="room-feature">🚿 Baño privado</span>
-                            <span class="room-feature">🏛️ Colonial</span>
+                            <span class="room-feature">📶 WiFi</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- CAMELIA -->
+                <div class="room-card reveal">
+                    <div class="room-slider" id="slider-camelia">
+                        <img src="images/habitaciones/camelia/camelia-1.jpg" alt="Habitación Camelia">
+                        <div class="slider-dots">
+                            <span class="sdot active" onclick="slideRoom('camelia',0,'images/habitaciones/camelia/camelia-1.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('camelia',1,'images/habitaciones/camelia/camelia-2.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('camelia',2,'images/habitaciones/camelia/camelia-3.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('camelia',3,'images/habitaciones/camelia/camelia-5.jpg')"></span>
+                        </div>
+                    </div>
+                    <div class="room-card-body">
+                        <h3>🌼 Camelia</h3>
+                        <p>Colorida habitación con paredes morado y naranja. Con 2 camas individuales, amplia, luminosa y con acceso al patio interior.</p>
+                        <div class="room-features">
+                            <span class="room-feature">❄️ A/C</span>
+                            <span class="room-feature">🌀 Ventilador</span>
+                            <span class="room-feature">🛏️ 2 camas ind.</span>
+                            <span class="room-feature">🌿 Vista patio</span>
+                            <span class="room-feature">📶 WiFi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAGNOLIA -->
+                <div class="room-card reveal">
+                    <div class="room-slider" id="slider-magnolia">
+                        <img src="images/habitaciones/magnolia/magnolia-2.jpg" alt="Habitación Magnolia">
+                        <div class="slider-dots">
+                            <span class="sdot active" onclick="slideRoom('magnolia',0,'images/habitaciones/magnolia/magnolia-2.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('magnolia',1,'images/habitaciones/magnolia/magnolia-1.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('magnolia',2,'images/habitaciones/magnolia/magnolia-3.jpg')"></span>
+                            <span class="sdot" onclick="slideRoom('magnolia',3,'images/habitaciones/magnolia/magnolia-bano.jpg')"></span>
+                        </div>
+                    </div>
+                    <div class="room-card-body">
+                        <h3>🌷 Magnolia</h3>
+                        <p>Habitación íntima con paredes rosa y ocre, piso de mosaico colonial verde — el más auténtico de la casa. Cama doble y baño privado con regadera.</p>
+                        <div class="room-features">
+                            <span class="room-feature">🛏️ Cama doble</span>
+                            <span class="room-feature">🚿 Baño privado</span>
+                            <span class="room-feature">🏛️ Piso colonial</span>
+                            <span class="room-feature">🪟 Múlt. ventanas</span>
+                            <span class="room-feature">📶 WiFi</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <p style="text-align: center; margin-top: 2rem; color: var(--primary); font-weight: 700; font-size: 1rem;">
                 🔞 Solo para adultos · Huéspedes entre 20 y 60 años
@@ -1716,6 +1798,13 @@
         }, { threshold: 0.5 });
 
         document.querySelectorAll('.stat-number').forEach(el => statsObserver.observe(el));
+
+        // ===== ROOM SLIDER =====
+        function slideRoom(room, idx, src) {
+            const slider = document.getElementById('slider-' + room);
+            slider.querySelector('img').src = src;
+            slider.querySelectorAll('.sdot').forEach((d, i) => d.classList.toggle('active', i === idx));
+        }
 
         // ===== NAVBAR SCROLL =====
         window.addEventListener('scroll', () => {
