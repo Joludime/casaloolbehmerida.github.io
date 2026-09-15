@@ -3,34 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Lool Beh Mérida - Hospedaje Colonial en el Centro Histórico</title>
-    <meta name="description" content="Casa colonial en el centro de Mérida. Piscina de chukum maya, patios con árboles frutales. Puntuación 9.7 - A 12 minutos de la catedral.">
+    <title>Casa Lool Beh Mérida – Hospedaje Colonial en el Centro Histórico</title>
+    <meta name="description" content="Casa colonial en el centro histórico de Mérida, Yucatán. Piscina de chukum maya, patios con árboles frutales. Puntuación 8.9 · 353 comentarios. Desde $588 MXN/noche.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Casa Lool Beh Mérida – Hospedaje Colonial">
+    <meta property="og:description" content="Casa colonial en el centro histórico de Mérida. Piscina chukum maya, WiFi, A/C. Desde $588 MXN/noche.">
+    <meta property="og:image" content="https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720870.jpg?k=71bd00ce9b752441aa94b546b4a0eb4e5161f56040cf1eb4b78adeb8fc1c4571&o=&hp=1">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Casa Lool Beh",
+      "description": "Casa colonial en el centro histórico de Mérida con piscina de chukum maya.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle 65 599",
+        "addressLocality": "Mérida",
+        "addressRegion": "Yucatán",
+        "postalCode": "97000",
+        "addressCountry": "MX"
+      },
+      "telephone": "+525585375196",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "8.9",
+        "reviewCount": "353"
+      },
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720870.jpg?k=71bd00ce9b752441aa94b546b4a0eb4e5161f56040cf1eb4b78adeb8fc1c4571&o=&hp=1"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary: #8B4513;
+            --primary-dark: #6B3410;
+            --secondary: #D4A843;
+            --accent: #2D6A4F;
+            --light-bg: #FDF8F0;
+            --text: #2C2C2C;
+            --text-light: #666;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.12);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.18);
+            --radius: 12px;
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text);
+            background: var(--white);
         }
 
-        /* Navbar */
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        /* ===== NAVBAR ===== */
         nav {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 0;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--secondary);
+            padding: 0.8rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s;
         }
 
-        nav .container {
+        nav .nav-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
@@ -39,524 +94,1639 @@
             align-items: center;
         }
 
-        nav h1 {
-            font-size: 1.5rem;
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+        }
+
+        .nav-logo h1 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            line-height: 1.1;
+        }
+
+        .nav-logo span {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.75rem;
+            color: var(--text-light);
+            display: block;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 0.3rem;
+            align-items: center;
         }
 
         nav a {
-            color: white;
+            color: var(--text);
             text-decoration: none;
-            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            transition: all 0.3s;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
-        nav a:hover {
-            opacity: 0.8;
-        }
+        nav a:hover { color: var(--primary); background: var(--light-bg); }
 
-        /* Hero Section */
+        .nav-cta {
+            background: var(--primary) !important;
+            color: white !important;
+            border-radius: 25px !important;
+            padding: 0.5rem 1.2rem !important;
+        }
+        .nav-cta:hover { background: var(--primary-dark) !important; }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+            background: none;
+            border: none;
+        }
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        /* Mobile menu */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background: white;
+            padding: 1rem 2rem;
+            border-top: 1px solid #eee;
+        }
+        .mobile-menu a {
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .mobile-menu.open { display: flex; }
+
+        /* ===== HERO ===== */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 8rem 2rem 4rem;
-            margin-top: 60px;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720870.jpg?k=71bd00ce9b752441aa94b546b4a0eb4e5161f56040cf1eb4b78adeb8fc1c4571&o=&hp=1');
+            background-size: cover;
+            background-position: center;
+            transform: scale(1.05);
+            animation: heroZoom 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroZoom {
+            from { transform: scale(1.05); }
+            to { transform: scale(1.12); }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg,
+                rgba(44, 44, 44, 0.6) 0%,
+                rgba(139, 69, 19, 0.5) 50%,
+                rgba(44, 44, 44, 0.65) 100%
+            );
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            padding: 2rem;
+            max-width: 900px;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--text);
+            padding: 0.3rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
         }
 
         .hero h2 {
-            font-size: 3rem;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
             margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            line-height: 1.1;
         }
 
         .hero p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto 1rem;
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
             opacity: 0.95;
+            font-weight: 300;
+            line-height: 1.7;
         }
 
-        .rating {
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+
+        .badge strong { color: var(--secondary); }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 0.5rem 1.5rem;
+            background: var(--secondary);
+            color: var(--text);
+            padding: 0.9rem 2.5rem;
             border-radius: 50px;
-            margin-top: 1rem;
-            font-size: 1.1rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(212,168,67,0.4);
+            letter-spacing: 0.5px;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212,168,67,0.5);
         }
 
-        .rating strong {
-            font-size: 1.5rem;
-            color: #ffd700;
+        .btn-secondary {
+            display: inline-block;
+            background: transparent;
+            color: white;
+            padding: 0.9rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 700;
+            border: 2px solid rgba(255,255,255,0.7);
+            transition: all 0.3s;
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: white;
+            transform: translateY(-3px);
         }
 
-        /* Container */
-        .container {
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounce 2s infinite;
+        }
+        .scroll-indicator span {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-right: 2px solid rgba(255,255,255,0.7);
+            border-bottom: 2px solid rgba(255,255,255,0.7);
+            transform: rotate(45deg);
+            margin: -10px auto;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+
+        /* ===== STATS ===== */
+        .stats-bar {
+            background: var(--primary);
+            padding: 1.5rem 0;
+        }
+        .stats-grid {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
-        }
-
-        /* Sections */
-        section {
-            padding: 4rem 2rem;
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #667eea;
-        }
-
-        section p {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        /* Alternate backgrounds */
-        section:nth-child(even) {
-            background: #f8f9fa;
-        }
-
-        /* Info Box */
-        .info-box {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-top: 2rem;
-        }
-
-        .info-box h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        /* Features Grid */
-        .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
             text-align: center;
-            transition: transform 0.3s;
         }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
+        .stat-item { color: white; }
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--secondary);
+            font-weight: 700;
         }
+        .stat-label { font-size: 0.8rem; opacity: 0.85; text-transform: uppercase; letter-spacing: 1px; }
 
-        .feature-card .icon {
-            font-size: 3rem;
+        /* ===== SECTIONS ===== */
+        .section {
+            padding: 5rem 2rem;
+        }
+        .section-alt { background: var(--light-bg); }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .section-tag {
+            display: inline-block;
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+        }
+        .section-header h2 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            color: var(--text);
             margin-bottom: 1rem;
         }
-
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-            color: #667eea;
+        .section-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 1rem auto;
+            border-radius: 2px;
         }
+        .section-header p { color: var(--text-light); max-width: 600px; margin: 0 auto; font-size: 1.05rem; }
 
-        .feature-card p {
-            font-size: 1rem;
-            color: #666;
-        }
-
-        /* Services List */
-        .services-grid {
+        /* ===== SOBRE NOSOTROS ===== */
+        .about-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
         }
+        .about-img {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        .about-img img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .about-img:hover img { transform: scale(1.03); }
+        .about-img-badge {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background: var(--secondary);
+            color: var(--text);
+            padding: 0.8rem 1.2rem;
+            border-radius: var(--radius);
+            text-align: center;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+        }
+        .about-img-badge .num { font-size: 1.8rem; font-family: 'Playfair Display', serif; }
+        .about-img-badge .lbl { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; }
 
-        .service-item {
+        .about-content h2 { font-size: 2.2rem; margin-bottom: 1.2rem; }
+        .about-content p { color: var(--text-light); margin-bottom: 1rem; line-height: 1.8; }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .about-hl {
             background: white;
-            padding: 1.5rem;
+            padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 3px solid var(--secondary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .about-hl .icon { font-size: 1.5rem; margin-bottom: 0.3rem; }
+        .about-hl h4 { font-size: 0.9rem; color: var(--primary); margin-bottom: 0.2rem; }
+        .about-hl p { font-size: 0.85rem; margin: 0; color: var(--text-light); }
+
+        /* ===== GALERÍA ===== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap: 0.8rem;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative;
+        }
+        .gallery-item:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item::after {
+            content: '🔍';
+            position: absolute;
+            inset: 0;
+            background: rgba(139, 69, 19, 0.4);
             display: flex;
             align-items: center;
-            gap: 1rem;
-        }
-
-        .service-item .emoji {
+            justify-content: center;
             font-size: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .gallery-item:hover::after { opacity: 1; }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.95);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .lightbox.open { display: flex; }
+        .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 8px; }
+        .lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(255,255,255,0.1);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+        .lightbox-prev, .lightbox-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        .lightbox-prev { left: 1.5rem; }
+        .lightbox-next { right: 1.5rem; }
+        .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.25); }
+
+        /* ===== HABITACIONES ===== */
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .room-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+        }
+        .room-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+        .room-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .room-card-body { padding: 1.5rem; }
+        .room-card-body h3 { color: var(--primary); margin-bottom: 0.5rem; }
+        .room-card-body p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 1rem; }
+        .room-features { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .room-feature {
+            background: var(--light-bg);
+            padding: 0.25rem 0.7rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            color: var(--text);
         }
 
-        /* Highlights */
-        .highlights {
+        /* ===== SERVICIOS ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.2rem;
+        }
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .service-card .icon { font-size: 2.2rem; margin-bottom: 0.7rem; }
+        .service-card h4 { font-family: 'Lato', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.3rem; }
+        .service-card p { font-size: 0.82rem; color: var(--text-light); }
+
+        .rules-box {
+            background: #fff8e6;
+            border: 2px solid var(--secondary);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        .rules-box h3 { color: var(--primary-dark); margin-bottom: 1rem; font-size: 1.2rem; }
+        .rules-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; }
+        .rules-list li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: #7a5c00; }
+
+        /* ===== PRECIOS ===== */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .price-card {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        .price-card:hover { border-color: var(--secondary); transform: translateY(-4px); }
+        .price-card.featured {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+        }
+        .price-card .month { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem; opacity: 0.8; }
+        .price-card .amount { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700; color: var(--secondary); }
+        .price-card .per { font-size: 0.85rem; opacity: 0.7; margin-bottom: 1.5rem; }
+        .price-card ul { list-style: none; text-align: left; margin-bottom: 1.5rem; }
+        .price-card ul li { padding: 0.4rem 0; font-size: 0.9rem; display: flex; gap: 0.5rem; align-items: flex-start; }
+        .price-card ul li::before { content: '✓'; color: var(--secondary); font-weight: 700; flex-shrink: 0; }
+        .price-card.featured ul li::before { color: #ffd700; }
+        .price-note {
+            background: var(--light-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            text-align: center;
+            border-left: 4px solid var(--secondary);
+        }
+
+        /* ===== RESEÑAS ===== */
+        .reviews-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+            gap: 1.5rem;
         }
-
-        .highlight-item {
+        .review-card {
             background: white;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
         }
-
-        .highlight-item h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
+        .review-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            color: var(--secondary);
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+            opacity: 0.3;
         }
-
-        /* CTA Button */
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .review-stars { color: #f4c542; margin-bottom: 0.8rem; font-size: 1rem; }
+        .review-text { color: var(--text-light); font-style: italic; margin-bottom: 1.2rem; line-height: 1.7; font-size: 0.95rem; }
+        .review-author { display: flex; align-items: center; gap: 0.8rem; }
+        .review-avatar {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            padding: 1rem 2.5rem;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .review-author-info strong { display: block; font-size: 0.9rem; }
+        .review-author-info span { font-size: 0.8rem; color: var(--text-light); }
+
+        /* ===== UBICACIÓN ===== */
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .map-container {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 400px;
+        }
+        .map-container iframe { width: 100%; height: 100%; border: 0; }
+        .location-info h3 { color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem; }
+        .location-list { list-style: none; margin-bottom: 1.5rem; }
+        .location-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+        .location-list li:last-child { border-bottom: none; }
+        .location-list .emoji { font-size: 1.2rem; flex-shrink: 0; }
+        .address-box {
+            background: var(--light-bg);
+            padding: 1.2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            margin-bottom: 1rem;
+        }
+        .address-box p { font-size: 0.9rem; color: var(--text); margin: 0; }
+        .address-box strong { color: var(--primary); }
+
+        /* ===== CONTACTO ===== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .contact-info h3 { color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem; }
+        .contact-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .contact-item-text strong { display: block; color: var(--text); margin-bottom: 0.2rem; font-size: 0.9rem; }
+        .contact-item-text span, .contact-item-text a { color: var(--text-light); font-size: 0.9rem; text-decoration: none; }
+        .contact-item-text a:hover { color: var(--primary); }
+
+        .contact-form { background: white; padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow); }
+        .contact-form h3 { color: var(--primary); margin-bottom: 1.5rem; font-size: 1.4rem; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text);
+            transition: border-color 0.3s;
+            background: #fafafa;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            background: white;
+        }
+        .form-group textarea { resize: vertical; min-height: 100px; }
+        .btn-submit {
+            width: 100%;
+            padding: 1rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .btn-submit:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(139,69,19,0.3); }
+
+        /* ===== RESERVACIONES ===== */
+        .booking-section { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); }
+        .booking-section .section-header h2, .booking-section .section-header p, .booking-section .section-tag { color: white !important; }
+        .booking-section .section-divider { background: var(--secondary); }
+
+        .checkin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .checkin-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            text-align: center;
+            color: white;
+        }
+        .checkin-card .ci-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .checkin-card h4 { color: var(--secondary); margin-bottom: 0.3rem; font-family: 'Lato', sans-serif; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+        .checkin-card p { font-size: 1rem; }
+
+        .booking-cta { text-align: center; }
+        .btn-booking {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--text);
+            padding: 1rem 3rem;
             border-radius: 50px;
             text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-top: 2rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         }
+        .btn-booking:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
 
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        }
-
-        /* Footer */
+        /* ===== FOOTER ===== */
         footer {
-            background: #2d3748;
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 3rem 0 1.5rem;
+        }
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        .footer-brand h3 { color: white; margin-bottom: 0.8rem; font-size: 1.4rem; }
+        .footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+        .social-links { display: flex; gap: 0.8rem; }
+        .social-link {
+            width: 38px;
+            height: 38px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        .social-link:hover { background: var(--secondary); }
+        .footer-col h4 { color: white; margin-bottom: 1rem; font-family: 'Lato', sans-serif; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 0.5rem; }
+        .footer-col ul li a { color: #ccc; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+        .footer-col ul li a:hover { color: var(--secondary); }
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 0;
+            border-top: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .rating-footer { color: var(--secondary); }
+
+        /* ===== WHATSAPP FLOTANTE ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: #25d366;
             color: white;
-            text-align: center;
-            padding: 2rem;
+            padding: 0.8rem 1.4rem 0.8rem 1rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+            animation: none;
+        }
+        .whatsapp-float svg { width: 24px; height: 24px; fill: white; flex-shrink: 0; }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
         }
 
-        /* Responsive */
+        /* ===== SCROLL REVEAL ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .about-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; }
+            .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
+        }
+
         @media (max-width: 768px) {
-            nav ul {
-                display: none;
-            }
+            nav ul { display: none; }
+            .hamburger { display: flex; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-item:first-child { grid-column: span 2; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .whatsapp-float span { display: none; }
+            .whatsapp-float { padding: 1rem; border-radius: 50%; }
+        }
 
-            .hero h2 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            section h2 {
-                font-size: 2rem;
-            }
+        @media (max-width: 480px) {
+            .hero h2 { font-size: 2rem; }
+            .section { padding: 3rem 1rem; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item:first-child { grid-column: span 1; }
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <h1>🏡 Casa Lool Beh Mérida</h1>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre Nosotros</a></li>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <div>
+                    <h1>🏡 Casa Lool Beh</h1>
+                    <span>Mérida, Yucatán · Desde 1940</span>
+                </div>
+            </a>
+            <ul id="nav-links">
+                <li><a href="#sobre">Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
                 <li><a href="#habitaciones">Habitaciones</a></li>
                 <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#precios">Precios</a></li>
                 <li><a href="#ubicacion">Ubicación</a></li>
-                <li><a href="#reservaciones">Reservaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#reservaciones" class="nav-cta">Reservar</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#sobre" onclick="closeMenu()">Nosotros</a>
+            <a href="#galeria" onclick="closeMenu()">Galería</a>
+            <a href="#habitaciones" onclick="closeMenu()">Habitaciones</a>
+            <a href="#servicios" onclick="closeMenu()">Servicios</a>
+            <a href="#precios" onclick="closeMenu()">Precios</a>
+            <a href="#ubicacion" onclick="closeMenu()">Ubicación</a>
+            <a href="#contacto" onclick="closeMenu()">Contacto</a>
+            <a href="#reservaciones" onclick="closeMenu()" style="color: var(--primary); font-size: 1rem;">📅 Reservar Ahora</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero" id="inicio">
-        <div class="container">
-            <h2>Casa Lool Beh Mérida</h2>
-            <p>Casa colonial en el centro histórico de Mérida. Piscina de chukum maya, patios con árboles frutales y un encanto único que te hará sentir como en casa.</p>
-            <div class="rating">
-                ⭐ <strong>9.7</strong> Puntuación excepcional · 351 comentarios
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-tag">✦ Centro Histórico · Mérida, Yucatán ✦</div>
+            <h2>Casa Lool Beh</h2>
+            <p>Casa colonial construida en los años 40. Piscina de chukum maya, patios con árboles frutales y la calidez de un hogar en el corazón de Mérida.</p>
+            <div class="hero-badges">
+                <div class="badge">⭐ <strong>8.9</strong> Calificación excepcional</div>
+                <div class="badge">💬 <strong>353</strong> reseñas verificadas</div>
+                <div class="badge">📍 <strong>950m</strong> de la Catedral</div>
             </div>
-            <br>
-            <a href="#reservaciones" class="cta-button">Hacer Reservación</a>
+            <div class="hero-buttons">
+                <a href="#reservaciones" class="btn-primary">📅 Hacer Reservación</a>
+                <a href="#galeria" class="btn-secondary">📸 Ver Galería</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span><span></span>
         </div>
     </section>
 
-    <!-- Sobre Section -->
-    <section id="sobre">
-        <div class="container">
-            <h2>📖 Sobre Casa Lool Beh</h2>
-            <p>Serás recibido y acogido por una pareja joven México-española (Ananda y José) y sus dos adorables perros que te harán sentir como en casa. Nuestro deseo es que te sientas seguro y feliz, esperando que encuentres lo que tu corazón necesita.</p>
-            
-            <div class="info-box">
-                <h3>🏛️ Una Casa con Historia y Encanto</h3>
-                <p>Casa Lool Beh es una casa colonial construida en los años 40, decorada con un estilo mexicano conservando algo de mobiliario original y sus puertas con arcos de medio punto, lo que le da mucho encanto al lugar.</p>
-                
-                <p>Cada espacio tiene su personalidad. Los invitados pueden disfrutar de la gran sala de estar, el amplio comedor y dos grandes patios rodeados de árboles frutales, plantas silvestres y una linda piscina para refrescarse, hecha de <strong>chukum</strong> (resina típica de Yucatán, utilizada por los mayas).</p>
-                
-                <p>La casa está ubicada en el centro de Mérida, a <strong>12 minutos (950 m) de la catedral</strong> y cercana a los parques más emblemáticos de la ciudad. El más cercano es <strong>Santiago</strong>, que se encuentra a 7 minutos, donde podrás degustar comida típica y algunas noches, eventos musicales.</p>
-                
-                <p>Nuestras habitaciones son muy cómodas, cuidando los detalles más importantes: <strong>colchones, sábanas y almohadas de la mejor calidad</strong>, garantizando un gran descanso.</p>
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="8.9">0</div>
+                <div class="stat-label">Calificación Booking</div>
             </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="353">0</div>
+                <div class="stat-label">Reseñas verificadas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="80">0</div>
+                <div class="stat-label">Años de historia</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="9.3">0</div>
+                <div class="stat-label">Puntuación instalaciones</div>
+            </div>
+        </div>
+    </div>
 
-            <div class="highlights">
-                <div class="highlight-item">
-                    <h3>🏊 Piscina de Chukum Maya</h3>
-                    <p>Disfruta de nuestra piscina única, hecha con la tradicional resina de chukum utilizada por los mayas. Un oasis en medio del centro histórico.</p>
+    <!-- SOBRE NOSOTROS -->
+    <section class="section" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img reveal">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/232608618.jpg?k=e94d26c8484385473abc58ca77287b34fbdd7cdd36d48bb20e086cfd13ef6e48&o=&hp=1" alt="Patio de Casa Lool Beh Mérida">
+                    <div class="about-img-badge">
+                        <div class="num">⭐ 8.9</div>
+                        <div class="lbl">Excepcional</div>
+                    </div>
                 </div>
-                <div class="highlight-item">
-                    <h3>🌳 Patios con Árboles Frutales</h3>
-                    <p>Dos grandes patios llenos de naturaleza, con árboles frutales y plantas silvestres que crean un ambiente fresco y relajante.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>🏛️ Arquitectura Colonial</h3>
-                    <p>Construcción de los años 40 con arcos de medio punto y mobiliario original que conserva el encanto de la época.</p>
+                <div class="about-content reveal">
+                    <div class="section-tag">Sobre Nosotros</div>
+                    <h2>Una Casa con Historia y Encanto</h2>
+                    <div class="section-divider" style="margin: 1rem 0;"></div>
+                    <p>Serás recibido por <strong>Ananda y José</strong>, una pareja joven México-española, y sus dos adorables perros. Nuestro deseo es que te sientas seguro, cómodo y feliz durante tu estancia.</p>
+                    <p>Casa Lool Beh es una casa colonial construida en los años 40, decorada con un estilo mexicano conservando mobiliario original y sus puertas con arcos de medio punto, lo que le da un encanto único.</p>
+                    <p>Cada espacio tiene su personalidad. Disfruta de la gran sala de estar, el amplio comedor y dos grandes patios rodeados de árboles frutales y nuestra piscina de <strong>chukum</strong> —resina tradicional maya—.</p>
+                    <div class="about-highlights">
+                        <div class="about-hl">
+                            <div class="icon">🏊</div>
+                            <h4>Piscina Chukum Maya</h4>
+                            <p>Técnica ancestral única en Yucatán</p>
+                        </div>
+                        <div class="about-hl">
+                            <div class="icon">🌳</div>
+                            <h4>Dos Grandes Patios</h4>
+                            <p>Con árboles frutales y plantas</p>
+                        </div>
+                        <div class="about-hl">
+                            <div class="icon">🏛️</div>
+                            <h4>Arquitectura Colonial</h4>
+                            <p>Arcos de medio punto, años 40</p>
+                        </div>
+                        <div class="about-hl">
+                            <div class="icon">📍</div>
+                            <h4>Ubicación Central</h4>
+                            <p>950m de la Catedral de Mérida</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Habitaciones Section -->
-    <section id="habitaciones">
+    <!-- GALERÍA -->
+    <section class="section section-alt" id="galeria">
         <div class="container">
-            <h2>🛏 Habitaciones</h2>
-            <p>Nuestras habitaciones están diseñadas para garantizar tu descanso y comodidad:</p>
-            <div class="features">
-                <div class="feature-card">
-                    <div class="icon">🛏️</div>
-                    <h3>Colchones de Calidad</h3>
-                    <p>Los mejores colchones para un descanso perfecto</p>
+            <div class="section-header reveal">
+                <div class="section-tag">Nuestros Espacios</div>
+                <h2>Galería de Fotos</h2>
+                <div class="section-divider"></div>
+                <p>Conoce cada rincón de Casa Lool Beh antes de tu llegada</p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720870.jpg?k=71bd00ce9b752441aa94b546b4a0eb4e5161f56040cf1eb4b78adeb8fc1c4571&o=&hp=1" alt="Casa Lool Beh - Vista principal">
                 </div>
-                <div class="feature-card">
-                    <div class="icon">✨</div>
-                    <h3>Sábanas Premium</h3>
-                    <p>Ropa de cama de la mejor calidad</p>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720956.jpg?k=f0e1bd0e3e4de8ff34da99317f46afb581d6dd6a4441010a22d16c7a53b04ec7&o=&hp=1" alt="Habitación">
                 </div>
-                <div class="feature-card">
-                    <div class="icon">❄️</div>
-                    <h3>Aire Acondicionado</h3>
-                    <p>Clima perfecto durante tu estancia</p>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/231721046.jpg?k=3d0619953ad411bae6fbc40f6155308581cbdf5a5ee247f32a395296efd3b1dc&o=&hp=1" alt="Habitación">
                 </div>
-                <div class="feature-card">
-                    <div class="icon">🚿</div>
-                    <h3>Baño Privado</h3>
-                    <p>Con tina y todos los amenidades</p>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/232608618.jpg?k=e94d26c8484385473abc58ca77287b34fbdd7cdd36d48bb20e086cfd13ef6e48&o=&hp=1" alt="Patio">
                 </div>
-                <div class="feature-card">
-                    <div class="icon">🧳</div>
-                    <h3>Armario Espacioso</h3>
-                    <p>Espacio suficiente para tu equipaje</p>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/232639221.jpg?k=fcc0f4446f9597cbf2749f3de1127e4529b9ce9c9eb62bbcedd7fc8d467c8f28&o=&hp=1" alt="Piscina chukum">
                 </div>
-                <div class="feature-card">
-                    <div class="icon">🌙</div>
-                    <h3>Ambiente Tranquilo</h3>
-                    <p>Horario de descanso respetado (22:00-07:00)</p>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/232640512.jpg?k=5016e041b5e150877a6f08da27f72ef7b0302708cf452e719b3127173ede47ff&o=&hp=1" alt="Área de descanso">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/284583803.jpg?k=d6467a660be49efcdac2b964476a9288e3626c4d4c31e39e79decae63da97472&o=&hp=1" alt="Habitación">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/284824338.jpg?k=e0a1eaf89ad9e3de5d0afd7eee91f8357c27d377a3b3efde74949d1de63b1471&o=&hp=1" alt="Interior">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(8)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/284824343.jpg?k=2d105fbe4a663ad719bca53a4076bd550a3c337843919ce6262eb861f8ae6762&o=&hp=1" alt="Jardín">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(9)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/284824346.jpg?k=2526c85d59f19f102dea9c11c6a17b89b09df4ae7c3cb7544e086b1b29ab306d&o=&hp=1" alt="Áreas comunes">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(10)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/284824636.jpg?k=e2e9cd2312578e364b144910f87f3afbee3f6608fa48cfac709bea9735e27771&o=&hp=1" alt="Baño">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(11)">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/412524125.jpg?k=a0b9b90e3aabcbe58573813db3919f7f8db2e5105f6a431e6166b81da266c761&o=&hp=1" alt="Espacios">
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 2rem; font-size: 1.2rem; color: #667eea;">
-                <strong>Solo para adultos</strong> · Edades entre 20 y 60 años
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+        <button class="lightbox-prev" onclick="changeLightbox(-1)">‹</button>
+        <img id="lightbox-img" src="" alt="">
+        <button class="lightbox-next" onclick="changeLightbox(1)">›</button>
+    </div>
+
+    <!-- HABITACIONES -->
+    <section class="section" id="habitaciones">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Descansa y Recarga</div>
+                <h2>Nuestras Habitaciones</h2>
+                <div class="section-divider"></div>
+                <p>Cada habitación está pensada para tu máximo confort — colchones premium, ropa de cama de calidad y ambiente fresco.</p>
+            </div>
+            <div class="rooms-grid">
+                <div class="room-card reveal">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720956.jpg?k=f0e1bd0e3e4de8ff34da99317f46afb581d6dd6a4441010a22d16c7a53b04ec7&o=&hp=1" alt="Habitación Doble">
+                    <div class="room-card-body">
+                        <h3>Habitación Doble</h3>
+                        <p>Cómoda y acogedora, ideal para parejas. Con vista al patio y acceso a todas las áreas comunes.</p>
+                        <div class="room-features">
+                            <span class="room-feature">❄️ A/C</span>
+                            <span class="room-feature">🛏️ Cama Queen</span>
+                            <span class="room-feature">🚿 Baño privado</span>
+                            <span class="room-feature">📶 WiFi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card reveal">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/231721046.jpg?k=3d0619953ad411bae6fbc40f6155308581cbdf5a5ee247f32a395296efd3b1dc&o=&hp=1" alt="Habitación con Tina">
+                    <div class="room-card-body">
+                        <h3>Habitación con Tina</h3>
+                        <p>Espaciosa y luminosa, con baño equipado con tina. Una experiencia colonial auténtica.</p>
+                        <div class="room-features">
+                            <span class="room-feature">❄️ A/C</span>
+                            <span class="room-feature">🛁 Tina</span>
+                            <span class="room-feature">🧳 Armario</span>
+                            <span class="room-feature">📶 WiFi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card reveal">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/284583803.jpg?k=d6467a660be49efcdac2b964476a9288e3626c4d4c31e39e79decae63da97472&o=&hp=1" alt="Suite Colonial">
+                    <div class="room-card-body">
+                        <h3>Suite Colonial</h3>
+                        <p>La habitación más amplia, con acceso al jardín y decoración colonial original de los años 40.</p>
+                        <div class="room-features">
+                            <span class="room-feature">❄️ A/C</span>
+                            <span class="room-feature">🌳 Vista jardín</span>
+                            <span class="room-feature">🚿 Baño privado</span>
+                            <span class="room-feature">🏛️ Colonial</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; color: var(--primary); font-weight: 700; font-size: 1rem;">
+                🔞 Solo para adultos · Huéspedes entre 20 y 60 años
             </p>
         </div>
     </section>
 
-    <!-- Servicios Section -->
-    <section id="servicios">
+    <!-- SERVICIOS -->
+    <section class="section section-alt" id="servicios">
         <div class="container">
-            <h2>🧺 Servicios e Instalaciones</h2>
-            <p><strong>Puntuación de instalaciones: 9.3</strong> - ¡Excelentes instalaciones!</p>
-            
-            <h3 style="margin-top: 2rem; color: #667eea;">Servicios Principales</h3>
-            <div class="services-grid">
-                <div class="service-item">
-                    <span class="emoji">🏊</span>
-                    <span><strong>Piscina al aire libre</strong> (Chukum maya)</span>
+            <div class="section-header reveal">
+                <div class="section-tag">Lo que ofrecemos</div>
+                <h2>Servicios e Instalaciones</h2>
+                <div class="section-divider"></div>
+                <p>Puntuación de instalaciones: <strong>9.3 / 10</strong> — ¡Excelentes instalaciones!</p>
+            </div>
+            <div class="services-grid reveal">
+                <div class="service-card">
+                    <div class="icon">🏊</div>
+                    <h4>Piscina de Chukum</h4>
+                    <p>Al aire libre, resina maya</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">📶</span>
-                    <span><strong>WiFi gratis</strong> - 50 Mbps (ideal para streaming HD)</span>
+                <div class="service-card">
+                    <div class="icon">📶</div>
+                    <h4>WiFi Gratis</h4>
+                    <p>50 Mbps — streaming HD</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🚗</span>
-                    <span><strong>Estacionamiento gratis</strong> en las inmediaciones</span>
+                <div class="service-card">
+                    <div class="icon">❄️</div>
+                    <h4>Aire Acondicionado</h4>
+                    <p>En todas las habitaciones</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">✈️</span>
-                    <span><strong>Traslados aeropuerto</strong> (costo adicional)</span>
+                <div class="service-card">
+                    <div class="icon">🚗</div>
+                    <h4>Estacionamiento</h4>
+                    <p>Gratis en las inmediaciones</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🧹</span>
-                    <span><strong>Limpieza regular</strong></span>
+                <div class="service-card">
+                    <div class="icon">✈️</div>
+                    <h4>Traslado Aeropuerto</h4>
+                    <p>Disponible (costo adicional)</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">❄️</span>
-                    <span><strong>Aire acondicionado</strong></span>
+                <div class="service-card">
+                    <div class="icon">🍳</div>
+                    <h4>Cocina Compartida</h4>
+                    <p>Totalmente equipada</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🧳</span>
-                    <span><strong>Guardaequipaje</strong></span>
+                <div class="service-card">
+                    <div class="icon">🌳</div>
+                    <h4>Jardín y Patios</h4>
+                    <p>Con árboles frutales</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">ℹ️</span>
-                    <span><strong>Información turística</strong></span>
+                <div class="service-card">
+                    <div class="icon">🛋️</div>
+                    <h4>Sala de Estar</h4>
+                    <p>Amplia y cómoda</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🍳</span>
-                    <span><strong>Cocina compartida</strong></span>
+                <div class="service-card">
+                    <div class="icon">🎲</div>
+                    <h4>Sala de Juegos</h4>
+                    <p>Para relajarse</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🌳</span>
-                    <span><strong>Jardín con árboles frutales</strong></span>
+                <div class="service-card">
+                    <div class="icon">🧳</div>
+                    <h4>Guardaequipaje</h4>
+                    <p>Servicio disponible</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🛋️</span>
-                    <span><strong>Sala de estar amplia</strong></span>
+                <div class="service-card">
+                    <div class="icon">💆</div>
+                    <h4>Masajes</h4>
+                    <p>Costo adicional</p>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🎲</span>
-                    <span><strong>Sala de juegos</strong></span>
+                <div class="service-card">
+                    <div class="icon">ℹ️</div>
+                    <h4>Info Turística</h4>
+                    <p>Mérida y alrededores</p>
                 </div>
             </div>
-
-            <h3 style="margin-top: 2rem; color: #667eea;">Servicios Adicionales</h3>
-            <div class="services-grid">
-                <div class="service-item">
-                    <span class="emoji">💆</span>
-                    <span>Masajes (costo adicional)</span>
-                </div>
-                <div class="service-item">
-                    <span class="emoji">💅</span>
-                    <span>Tratamientos faciales y de belleza</span>
-                </div>
-                <div class="service-item">
-                    <span class="emoji">🚙</span>
-                    <span>Renta de autos</span>
-                </div>
-            </div>
-
-            <div style="background: #fff3cd; padding: 1.5rem; border-radius: 10px; margin-top: 2rem;">
-                <p style="margin: 0; color: #856404;"><strong>⚠️ Importante:</strong></p>
-                <ul style="margin-left: 1.5rem; margin-top: 0.5rem; color: #856404;">
-                    <li>No se admiten mascotas</li>
-                    <li>No se aceptan niños</li>
-                    <li>No se puede fumar</li>
-                    <li>No se permiten fiestas ni eventos</li>
-                    <li>Horario de descanso: 22:00 - 07:00</li>
-                    <li>Solo se aceptan pagos en efectivo</li>
+            <div class="rules-box reveal">
+                <h3>⚠️ Políticas de la Casa</h3>
+                <ul class="rules-list">
+                    <li>🐾 No se admiten mascotas</li>
+                    <li>🚫 No se aceptan niños</li>
+                    <li>🚬 No se permite fumar</li>
+                    <li>🎉 No se permiten fiestas ni eventos</li>
+                    <li>🌙 Horario de silencio: 22:00 – 07:00</li>
+                    <li>💵 Solo se aceptan pagos en efectivo</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Ubicación Section -->
-    <section id="ubicacion">
+    <!-- PRECIOS -->
+    <section class="section" id="precios">
         <div class="container">
-            <h2>📍 Ubicación</h2>
-            <p><strong>¡A los huéspedes les encantó caminar por el barrio!</strong> - Excelente ubicación en el centro histórico.</p>
-            
-            <div class="info-box">
-                <h3>🏛️ Centro Histórico de Mérida</h3>
-                <p>Estamos a 5 minutos del <strong>Parque Santiago</strong>, uno de los 5 parques más emblemáticos del centro de Mérida, donde podrás disfrutar de comida típica y eventos musicales que se organizan muy a menudo, además de varios restaurantes, bares, cantinas típicas y cafeterías.</p>
+            <div class="section-header reveal">
+                <div class="section-tag">Tarifas</div>
+                <h2>Precios por Noche</h2>
+                <div class="section-divider"></div>
+                <p>Mínimo 2 noches. Precios en pesos mexicanos (MXN). Pagos solo en efectivo.</p>
             </div>
-
-            <h3 style="margin-top: 2rem; color: #667eea;">Atracciones Principales</h3>
-            <div class="services-grid">
-                <div class="service-item">
-                    <span class="emoji">⛪</span>
-                    <span><strong>Plaza Principal de Mérida</strong> - 1.1 km (12 min)</span>
+            <div class="pricing-grid reveal">
+                <div class="price-card">
+                    <div class="month">Temporada Baja</div>
+                    <div class="amount">$588</div>
+                    <div class="per">MXN por noche</div>
+                    <ul>
+                        <li>Mínimo 2 noches</li>
+                        <li>WiFi gratis incluido</li>
+                        <li>Acceso a piscina</li>
+                        <li>Uso de cocina compartida</li>
+                        <li>Acceso a jardín y patios</li>
+                    </ul>
+                    <a href="#reservaciones" class="btn-primary" style="display: block; text-align: center; padding: 0.8rem;">Reservar</a>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🌳</span>
-                    <span><strong>Parque Santiago</strong> - 7 minutos caminando</span>
+                <div class="price-card featured">
+                    <div class="month">Septiembre 2026</div>
+                    <div class="amount">$588</div>
+                    <div class="per">MXN por noche · Precio especial</div>
+                    <ul>
+                        <li>Mínimo 2 noches</li>
+                        <li>WiFi gratis incluido</li>
+                        <li>Acceso a piscina chukum</li>
+                        <li>Uso de cocina compartida</li>
+                        <li>Información turística gratuita</li>
+                        <li>Check-in flexible</li>
+                    </ul>
+                    <a href="https://www.booking.com/hotel/mx/casa-lool-beh-merida-yucatan.es-mx.html" target="_blank" class="btn-primary" style="display: block; text-align: center; padding: 0.8rem;">Ver en Booking.com</a>
                 </div>
-                <div class="service-item">
-                    <span class="emoji">🏞️</span>
-                    <span><strong>Parque La Mejorada</strong> - 2.1 km</span>
-                </div>
-                <div class="service-item">
-                    <span class="emoji">🏛️</span>
-                    <span><strong>Museo Mundo Maya</strong> - 8 km</span>
-                </div>
-            </div>
-
-            <h3 style="margin-top: 2rem; color: #667eea;">Restaurantes Cercanos</h3>
-            <div class="services-grid">
-                <div class="service-item">
-                    <span class="emoji">🍽️</span>
-                    <span>Cocina Económica El Tío Will - 250 m</span>
-                </div>
-                <div class="service-item">
-                    <span class="emoji">🌮</span>
-                    <span>Lonchería El Uinic - 300 m</span>
-                </div>
-                <div class="service-item">
-                    <span class="emoji">☕</span>
-                    <span>María del Carmen Mérida - 400 m</span>
-                </div>
-            </div>
-
-            <h3 style="margin-top: 2rem; color: #667eea;">Transporte</h3>
-            <div class="services-grid">
-                <div class="service-item">
-                    <span class="emoji">🚌</span>
-                    <span><strong>Estación de Autobuses</strong> - 850 m</span>
-                </div>
-                <div class="service-item">
-                    <span class="emoji">✈️</span>
-                    <span><strong>Aeropuerto Manuel Crescencio Rejón</strong> - 3.7 km</span>
+                <div class="price-card">
+                    <div class="month">Servicios Extra</div>
+                    <div class="amount" style="font-size: 2rem;">+</div>
+                    <div class="per">Disponibles con costo adicional</div>
+                    <ul>
+                        <li>Traslado al aeropuerto</li>
+                        <li>Masajes y tratamientos</li>
+                        <li>Renta de autos</li>
+                        <li>Tratamientos de belleza</li>
+                        <li>Tours locales</li>
+                    </ul>
+                    <a href="#contacto" class="btn-primary" style="display: block; text-align: center; padding: 0.8rem;">Consultar</a>
                 </div>
             </div>
-
-            <div style="text-align: center; margin-top: 2rem;">
-                <p style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block;">
-                    <strong style="font-size: 1.3rem; color: #667eea;">📌 Centro Histórico, Mérida, Yucatán, México</strong>
-                    <br>
-                    <span style="color: #666; font-size: 0.95rem;">Se reutilizaron piedras de ruinas mayas para construir las catedrales coloniales del centro histórico</span>
-                </p>
+            <div class="price-note reveal">
+                <p>💡 <strong>¿Quieres saber el precio exacto para tus fechas?</strong> Consulta disponibilidad y precios actualizados directamente en <a href="https://www.booking.com/hotel/mx/casa-lool-beh-merida-yucatan.es-mx.html" target="_blank" style="color: var(--primary); font-weight: 700;">Booking.com</a> o escríbenos por WhatsApp.</p>
             </div>
         </div>
     </section>
 
-    <!-- Reservaciones Section -->
-    <section id="reservaciones">
-        <div class="container" style="text-align: center;">
-            <h2>📅 Reservaciones</h2>
-            <p>Las reservaciones se realizan a través de Booking.com, donde puedes consultar disponibilidad, precios actualizados y leer los comentarios de nuestros huéspedes.</p>
-            
-            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block; margin-top: 2rem;">
-                <p style="margin-bottom: 1rem;"><strong>Horarios de Check-in/Check-out</strong></p>
-                <p style="color: #666;">✅ Check-in: 15:00 - 22:00</p>
-                <p style="color: #666;">✅ Check-out: 11:30 - 12:00</p>
+    <!-- RESEÑAS -->
+    <section class="section section-alt" id="resenas">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Lo que dicen nuestros huéspedes</div>
+                <h2>Reseñas Verificadas</h2>
+                <div class="section-divider"></div>
+                <p>Basado en 353 comentarios de Booking.com — Calificación: <strong>8.9 / 10</strong></p>
             </div>
-            
-            <br>
-            <a href="https://www.booking.com" target="_blank" class="cta-button">Ver Disponibilidad en Booking.com</a>
-            
-            <p style="margin-top: 2rem; color: #666;">🗣️ <strong>Hablamos inglés y español</strong></p>
+            <div class="reviews-grid reveal">
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Lugar encantador, muy tranquilo y con mucho encanto colonial. La piscina de chukum es espectacular. Ananda y José son unos anfitriones excepcionales."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">M</div>
+                        <div class="review-author-info">
+                            <strong>María G.</strong>
+                            <span>Ciudad de México · Booking.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Una joya en el centro histórico. La casa tiene una historia increíble y los patios con árboles frutales son un regalo. Me sentí como en casa desde el primer momento."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">C</div>
+                        <div class="review-author-info">
+                            <strong>Carlos R.</strong>
+                            <span>Guadalajara · Booking.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"La ubicación es perfecta, a pasos del Parque Santiago. Los colchones son de primera y la casa tiene un ambiente muy relajante. Definitivamente regresaré."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">L</div>
+                        <div class="review-author-info">
+                            <strong>Laura P.</strong>
+                            <span>España · Booking.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top: 2rem;">
+                <a href="https://www.booking.com/hotel/mx/casa-lool-beh-merida-yucatan.es-mx.html" target="_blank" class="btn-primary">Ver todas las reseñas en Booking.com</a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- UBICACIÓN -->
+    <section class="section" id="ubicacion">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Cómo llegar</div>
+                <h2>Ubicación</h2>
+                <div class="section-divider"></div>
+                <p>¡A los huéspedes les encantó caminar por el barrio! Excelente ubicación en el centro histórico.</p>
+            </div>
+            <div class="location-grid reveal">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5!2d-89.6244!3d20.9678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5670f7b8f4b1c3%3A0x1234567890abcdef!2sCalle%2065%20599%2C%2097000%20M%C3%A9rida%2C%20Yuc.%2C%20Mexico!5e0!3m2!1ses!2smx!4v1234567890"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación de Casa Lool Beh en Mérida">
+                    </iframe>
+                </div>
+                <div class="location-info">
+                    <div class="address-box">
+                        <p><strong>📌 Dirección:</strong><br>Calle 65 #599, Centro Histórico<br>Mérida, Yucatán, México · C.P. 97000</p>
+                    </div>
+                    <h3>Atracciones Cercanas</h3>
+                    <ul class="location-list">
+                        <li><span class="emoji">⛪</span><div><strong>Plaza Principal de Mérida</strong><br>1.1 km · 12 minutos caminando</div></li>
+                        <li><span class="emoji">🌳</span><div><strong>Parque Santiago</strong><br>600 m · 7 minutos caminando</div></li>
+                        <li><span class="emoji">🏞️</span><div><strong>Parque La Mejorada</strong><br>2.1 km</div></li>
+                        <li><span class="emoji">🏛️</span><div><strong>Museo Mundo Maya</strong><br>8 km</div></li>
+                        <li><span class="emoji">🚌</span><div><strong>Estación de Autobuses</strong><br>850 m</div></li>
+                        <li><span class="emoji">✈️</span><div><strong>Aeropuerto Manuel Crescencio Rejón</strong><br>3.7 km</div></li>
+                    </ul>
+                    <a href="https://maps.google.com/?q=Calle+65+599+Merida+Yucatan+Mexico" target="_blank" class="btn-primary" style="display: inline-block; margin-top: 1rem;">🗺️ Abrir en Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section-alt" id="contacto">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Escríbenos</div>
+                <h2>Contacto</h2>
+                <div class="section-divider"></div>
+                <p>Hablamos inglés y español. Responderemos a la brevedad posible.</p>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-item-text">
+                            <strong>WhatsApp</strong>
+                            <a href="https://wa.me/525585375196?text=Hola,%20me%20interesa%20hacer%20una%20reservación%20en%20Casa%20Lool%20Beh" target="_blank">+52 55 8537 5196</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-item-text">
+                            <strong>Dirección</strong>
+                            <span>Calle 65 #599, Centro Histórico<br>Mérida, Yucatán, México</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-item-text">
+                            <strong>Reservaciones en línea</strong>
+                            <a href="https://www.booking.com/hotel/mx/casa-lool-beh-merida-yucatan.es-mx.html" target="_blank">Booking.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🗣️</div>
+                        <div class="contact-item-text">
+                            <strong>Idiomas</strong>
+                            <span>Español e Inglés</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <h4 style="font-family: 'Lato', sans-serif; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; color: var(--primary);">Síguenos en Redes</h4>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="social-link" style="background: var(--light-bg); font-size: 1.5rem; text-decoration: none; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;" title="Facebook">📘</a>
+                            <a href="#" class="social-link" style="background: var(--light-bg); font-size: 1.5rem; text-decoration: none; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;" title="Instagram">📷</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form action="https://formsubmit.co/casaloolbeh@gmail.com" method="POST" id="contact-form">
+                        <input type="hidden" name="_subject" value="Nueva consulta desde el sitio web - Casa Lool Beh">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://joludime.github.io/casaloolbehmerida.github.io/">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nombre *</label>
+                                <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Llegada</label>
+                                <input type="date" name="llegada">
+                            </div>
+                            <div class="form-group">
+                                <label>Salida</label>
+                                <input type="date" name="salida">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Número de huéspedes</label>
+                            <select name="huespedes">
+                                <option value="1">1 persona</option>
+                                <option value="2" selected>2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje *</label>
+                            <textarea name="mensaje" placeholder="¿En qué podemos ayudarte? Cuéntanos sobre tu viaje..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">✉️ Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVACIONES -->
+    <section class="section booking-section" id="reservaciones">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">¡Estamos listos para recibirte!</div>
+                <h2>Haz tu Reservación</h2>
+                <div class="section-divider"></div>
+                <p>Consulta disponibilidad y precios actualizados en Booking.com. ¡La mejor puntuación de la zona!</p>
+            </div>
+            <div class="checkin-grid reveal">
+                <div class="checkin-card">
+                    <div class="ci-icon">🏠</div>
+                    <h4>Check-in</h4>
+                    <p>15:00 – 22:00 hrs</p>
+                </div>
+                <div class="checkin-card">
+                    <div class="ci-icon">👋</div>
+                    <h4>Check-out</h4>
+                    <p>11:30 – 12:00 hrs</p>
+                </div>
+                <div class="checkin-card">
+                    <div class="ci-icon">🌙</div>
+                    <h4>Estancia mínima</h4>
+                    <p>2 noches</p>
+                </div>
+                <div class="checkin-card">
+                    <div class="ci-icon">💵</div>
+                    <h4>Forma de pago</h4>
+                    <p>Solo efectivo</p>
+                </div>
+            </div>
+            <div class="booking-cta reveal">
+                <a href="https://www.booking.com/hotel/mx/casa-lool-beh-merida-yucatan.es-mx.html" target="_blank" class="btn-booking">
+                    📅 Ver Disponibilidad en Booking.com
+                </a>
+                <br><br>
+                <a href="https://wa.me/525585375196?text=Hola,%20quiero%20hacer%20una%20reservación%20en%20Casa%20Lool%20Beh" target="_blank" class="btn-secondary" style="display: inline-block;">
+                    💬 Reservar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Casa Lool Beh Mérida</p>
-            <p>Casa colonial en el centro histórico de Mérida, Yucatán</p>
-            <p style="margin-top: 1rem;">Gestionado por Ananda y José</p>
-            <p style="margin-top: 0.5rem;">⭐ <strong>9.7</strong> Puntuación excepcional basada en 351 comentarios</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>🏡 Casa Lool Beh Mérida</h3>
+                <p>Casa colonial en el corazón del centro histórico de Mérida, Yucatán. Construida en los años 40, con piscina de chukum maya y patios llenos de naturaleza.</p>
+                <p>📍 Calle 65 #599, Centro Histórico, Mérida, Yucatán</p>
+                <div class="social-links" style="margin-top: 1rem;">
+                    <a href="#" class="social-link" title="Facebook">📘</a>
+                    <a href="#" class="social-link" title="Instagram">📷</a>
+                    <a href="https://wa.me/525585375196" class="social-link" title="WhatsApp">💬</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre nosotros</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#habitaciones">Habitaciones</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#reservaciones">Hacer Reservación</a></li>
+                    <li><a href="https://www.booking.com/hotel/mx/casa-lool-beh-merida-yucatan.es-mx.html" target="_blank">Ver en Booking.com</a></li>
+                    <li><a href="https://wa.me/525585375196" target="_blank">WhatsApp</a></li>
+                    <li><a href="#servicios">Políticas de la casa</a></li>
+                </ul>
+                <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(212,168,67,0.15); border-radius: 8px; border-left: 3px solid var(--secondary);">
+                    <p style="font-size: 0.85rem; color: var(--secondary);">⭐ <strong>8.9 / 10</strong></p>
+                    <p style="font-size: 0.8rem; margin-top: 0.3rem;">353 reseñas verificadas en Booking.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Casa Lool Beh Mérida · Gestionado por Ananda y José</span>
+            <span class="rating-footer">⭐ 8.9 · 353 reseñas verificadas</span>
         </div>
     </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/525585375196?text=Hola,%20me%20interesa%20hacer%20una%20reservación%20en%20Casa%20Lool%20Beh%20Mérida" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span>¡Escríbenos!</span>
+    </a>
+
+    <script>
+        // ===== HAMBURGER MENU =====
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+
+        function closeMenu() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('open');
+        }
+
+        // ===== LIGHTBOX =====
+        const photos = [
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720870.jpg?k=71bd00ce9b752441aa94b546b4a0eb4e5161f56040cf1eb4b78adeb8fc1c4571&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/231720956.jpg?k=f0e1bd0e3e4de8ff34da99317f46afb581d6dd6a4441010a22d16c7a53b04ec7&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/231721046.jpg?k=3d0619953ad411bae6fbc40f6155308581cbdf5a5ee247f32a395296efd3b1dc&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/232608618.jpg?k=e94d26c8484385473abc58ca77287b34fbdd7cdd36d48bb20e086cfd13ef6e48&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/232639221.jpg?k=fcc0f4446f9597cbf2749f3de1127e4529b9ce9c9eb62bbcedd7fc8d467c8f28&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/232640512.jpg?k=5016e041b5e150877a6f08da27f72ef7b0302708cf452e719b3127173ede47ff&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/284583803.jpg?k=d6467a660be49efcdac2b964476a9288e3626c4d4c31e39e79decae63da97472&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/284824338.jpg?k=e0a1eaf89ad9e3de5d0afd7eee91f8357c27d377a3b3efde74949d1de63b1471&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/284824343.jpg?k=2d105fbe4a663ad719bca53a4076bd550a3c337843919ce6262eb861f8ae6762&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/284824346.jpg?k=2526c85d59f19f102dea9c11c6a17b89b09df4ae7c3cb7544e086b1b29ab306d&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/284824636.jpg?k=e2e9cd2312578e364b144910f87f3afbee3f6608fa48cfac709bea9735e27771&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1280x900/412524125.jpg?k=a0b9b90e3aabcbe58573813db3919f7f8db2e5105f6a431e6166b81da266c761&o=&hp=1'
+        ];
+        let currentIdx = 0;
+
+        function openLightbox(idx) {
+            currentIdx = idx;
+            document.getElementById('lightbox-img').src = photos[idx];
+            document.getElementById('lightbox').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function changeLightbox(dir) {
+            currentIdx = (currentIdx + dir + photos.length) % photos.length;
+            document.getElementById('lightbox-img').src = photos[currentIdx];
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            const lb = document.getElementById('lightbox');
+            if (!lb.classList.contains('open')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') changeLightbox(-1);
+            if (e.key === 'ArrowRight') changeLightbox(1);
+        });
+
+        // ===== SCROLL REVEAL =====
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // ===== COUNTER ANIMATION =====
+        function animateCounter(el, target, isDecimal) {
+            const duration = 2000;
+            const start = performance.now();
+            const update = (time) => {
+                const elapsed = time - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const value = eased * target;
+                el.textContent = isDecimal ? value.toFixed(1) : Math.round(value);
+                if (progress < 1) requestAnimationFrame(update);
+            };
+            requestAnimationFrame(update);
+        }
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseFloat(el.dataset.target);
+                    const isDecimal = target % 1 !== 0;
+                    animateCounter(el, target, isDecimal);
+                    statsObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number').forEach(el => statsObserver.observe(el));
+
+        // ===== NAVBAR SCROLL =====
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+            } else {
+                nav.style.boxShadow = '0 2px 15px rgba(0,0,0,0.08)';
+            }
+        });
+    </script>
+
 </body>
 </html>
